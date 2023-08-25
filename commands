@@ -1,0 +1,15 @@
+build Dockerfile
+    - docker build -t server:v1 .
+run image
+    - docker run -p 4000:4000 d54959460a8c
+    - docker run -p 4000:4000 --name server3 --net=host 6f
+
+images list
+    - docker images
+delete image 
+    - docker image rm d66f8a947bf4
+
+container list
+    - docker container ls --all
+delete conatiner
+    - docker rm 902378515f02
